@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			transition: 0.5s;
+		}
+
+		header {
+			height: 100vh;
+			max-width: 900px;
+			margin: 0 auto;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 0;
+			flex-direction: column;
+		}
+
+		input {
+			width: 500px;
+			padding: 10px;
+			background-color: #E5E4E2;
+			color: black;
+			outline: none;
+			border: none;
+			border-radius: 10px;
+			height: 27px;
+			text-align: center;
+		}
+
+		input::placeholder {
+			font-size: 20px;
+		}
+
+		.text {
+			margin-top: 0;
+			margin-bottom: 25px;
+			margin-left: 0;
+			margin-right: 0;
+			background-color: Aero;
+			color: black;
+			padding: 10px;
+			border-bottom: 2px solid blue;
+		}
+
+		div span {
+			color: blue;
+		}
+
+		button {
+			padding: 10px;
+			background-color: blue;
+			color: white;
+			font-weight: ;
+			border: 0;
+			font-size: 20px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-bottom: 3px;
+			text-align: center;
+			width: 500px;
+			border-radius: 5px;
+		}
+
+		h1 {
+			color: blue;
+			font-size: 50px;
+			margin-bottom: 10px;
+		}
+		
+		p {
+			color: blue;
+			font-size: 20px;
+		}
+
+		button:hover {
+			background-color: darkblue;
+			transition: 0.5s;
+		}
+
+		.daftar {
+			background-color: white;
+			color: black;
+			border: 3px solid black;
+			padding: 5px;
+			display: inline-block;
+			width: 400px;
+			cursor: pointer;
+		}
+
+		.daftar:hover {
+			background-color: black;
+			color: white;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+
+		.forget {
+				cursor: pointer;
+		}
+
+		.info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			align-content: center;
+		}
+
+		.child2 p sup {
+			background-color: black;
+			color: white;
+			padding: 5px;
+			box-sizing: border-box;
+			border-radius: 30px;
+			font-weight: bold;	
+		}
+
+		.child2 p {
+			/*font-weight: bold*/;
+			color: black;
+		}
+
+		.child1 p {
+			/*font-weight: bold;*/
+			color: black;
+		}
+
+		i {
+			margin-right: 10px;
+		}
+
+		.asem {
+			margin-left: 10px;
+		}
+
+		.lupa {
+			color: black;
+		}
+
+		@media screen and (max-width: 500px) {
+			header {
+				width: 100%;
+				height: 100vh;
+				margin: auto;
+				box-sizing: border-box;
+			}
+			.text {
+				padding: 0px 10px 5px;
+				border-bottom: 3px solid blue;
+			}
+
+			input {
+			width: 100%;
+			padding: 10px;
+			background-color: #E5E4E2;
+			color: black;
+			outline: none;
+			border: none;
+			border-radius: 10px;
+			height: 27px;
+			text-align: center;
+			}
+
+			button {
+			padding: 10px;
+			background-color: blue;
+			color: white;
+			font-weight: ;
+			border: 0;
+			font-size: 20px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-bottom: 3px;
+			text-align: center;
+			width: 100%;
+			border-radius: 5px;
+			}
+
+			.daftar {
+			background-color: white;
+			color: black;
+			border: 3px solid black;
+			padding: 5px;
+			display: inline-block;
+			width: 100%;
+			cursor: pointer;
+			}
+
+			.info {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			align-content: center;
+			width: 100%;
+			/*flex-direction: column;*/
+			}
+
+			.info .child1 {
+				width: 30%;
+			}
+
+			.info .child2 {
+				width: 30%;
+			}
+
+			.info .child2 {
+				font-size: 40px;
+			}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. <span>Duis aute irure dolor</span> in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<h1>Facebook</h1>
+	<form action="page5.html" method="GET">
+	<input type="text" name="username" placeholder="Username" required>
+	<br><br>
+	<input type="password" name="Password" placeholder="Password" required>
+	<br><br>
+	<button type="submit" id="kirim" value="submit"><i class="fa">&#xf090;</i>Log In</button> 
+	<p class="forget"><strong><i class="fa lupa">&#xf2c2;</i>Forget Password?</strong></p>
+	<div class="daftar">
+		<strong><i class="fa">&#xf2ba;</i>Sign Up</strong>
+	</div>
+	<div class="copy">
+		<p>&copy 2023 www.Facebook.com</p>
+	</div>
+	<div class="info">
+		<div class="child1">
+			<p><i class="fa">&#xf0ac;</i>
+			Bahasa Indonesia</p>
+			<p><i class="fa">&#xf0ac;</i>Bahasa Mandarin</p>
+		</div>
+		<div class="child2">
+			<p>Beli Paket Kuota Gratis 30GB RP? <sup>0.</sup><i class="fa asem">&#xf217;</i></p>
+		</div>
+	</div>
+	</form>
+</header>
+</body>
+</html>
